@@ -38,21 +38,49 @@ PRs should be posted _before_ class begins on Tuesday, January 2, 2024.
 ### Interview Practice Questions
 
 1. What are three (3) syntax difference between HTML and JSX?
+html syntax difference- 
+1. class= 
+2. style="color: x;"
+
+JSX syntax difference-
+1. className
+2. style={{ color: "x" }}
 
 2. What is yarn? What file(s) are modified when you run the command yarn in your terminal?
+yarn runs packages (this was my original answer) chatGpt says that yarn checks for yarn lock file in the project, which I guess locks the dependencies to ensure that the installations are consistent. 
+if the yarn lock is present it installs the dependencies specified on the lock file, if not it installs the dependencies based on the package.json file.
+once dependencies are installed it updates the file to reflect the exact versions that were installed.
+it also looks for any scripts defined in the scripts 
+managing dependencies, checking and updating the yarn.lock file, and executing any scripts defined in the package.json file.
 
 3. What is the difference between state values and props in React?
+both state and props are used to manage and handle data within components 
+state values - 
+source data- It is used for managing and storing data that belongs to a component. State is declared and used within the component and is mutable. Changes to state trigger a re-render of the component. 
+Mutability-It is mutable and can be updated using the setState function. React components re-render when their state changes.
+Declaration-Declared using the useState hook in functional components or as a property in class components
+Ownership-Owned and managed by the component where it is declared.
+Access-Accessed using useState hook in functional components or this.state in class components.
+
+props-
+source data- Short for "properties," props are used to pass data from a parent component to a child component. Props are immutable and are set by the parent component.
+Mutability- They are immutable and cannot be modified directly by the component that receives them. Changes in props must come from the parent component.
+Declaration-Passed down from a parent component and accessed as arguments in the child component
+Ownership-Owned by the parent component that passes them down.
+Access-Accessed as arguments in the function component or using this.props in class components.
 
 4. STRETCH (optional): What is the difference between a div tag and a span tag?
+div tag
+span tag
 
 ### Looking Ahead: Terms for Next Unit
 
 1. Object-oriented programming:
-
+OOP-
 2. Ruby:
-
+Ruby-
 3. Ruby Hashes:
-
+Ruby Hashes- 
 ---
 
 ### Assessment Review Process
